@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ $primary-color: #272727;
+ $secondary-color: #ff652f;
+
+@mixin smooth-transition {
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes areakey {
+    0%{left: -100%;}
+    100%{left: 0; opacity: 1;}
+}
+@keyframes aboutareakey {
+    0%{left: -100%;}
+    100%{left: 0; opacity: 0.92;}
+}
+@keyframes fadekey {
+    100%{opacity: 1;}
+}
+@keyframes greetkey {
+    0%{top: -100%;}
+    100%{top: 0;}
+}
+@keyframes iconkey {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1; bottom: 13%; left: auto; font-size: 26px;}
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 767px) {
+        @content;        
+    }
+}
+@mixin media-md {
+    @media screen and (max-width: 1024px) {
+        @content;        
+    }
+}

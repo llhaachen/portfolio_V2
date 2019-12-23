@@ -1,0 +1,40 @@
+#contact {    
+    position: relative;
+    background: 
+        url('../img/contact.jpg')no-repeat center top;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+
+     .contact_head {
+         font-size: 52px;
+         font-weight: 500;
+         margin-top: -6rem;
+         margin-bottom: 5rem;
+         opacity: 0;
+
+         &.contHeadAnimate {
+             animation: fadekey 0.6s ease-in-out 0.3s forwards;
+         }
+     }
+}
+
+.contact_list {
+    position: relative;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    font-size: 24px;
+    font-weight: 500;
+    opacity: 0;
+
+    &.contListAnimate {
+        animation: areakey 0.8s ease-in-out 0.9s forwards;
+    }
+
+    .contact_text{
+        color: $secondary-color;
+        text-align: center;
+    }
+}

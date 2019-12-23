@@ -1,0 +1,38 @@
+#home { 
+    font-family: 'Quicksand', 'Segoe UI', Arial;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;      
+}
+
+.intro{   
+    font-size: 2rem;
+    opacity: 0;
+    animation: fadekey 0.5s ease-in 1.7s forwards;    
+}
+
+.fname {
+    font-size: 4.5rem;
+    position: relative;
+    opacity: 0;
+    animation: fadekey 0.5s ease-in 1.8s forwards;    
+
+    .lname{
+        color: $secondary-color;
+    }
+}
+#greeting {
+    position: relative;
+    margin-top: 1rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    animation: greetkey 1.1s ease-in-out forwards;
+}
+
+#time{
+    font-size: 7rem;
+    margin-top: -5rem;
+    display: none;    
+}
+
